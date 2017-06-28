@@ -1,0 +1,12 @@
+# outputs
+*.docx
+*.pdf
+E*.tex
+
+# tex files
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
