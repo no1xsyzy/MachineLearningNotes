@@ -13,3 +13,5 @@
 # pdf
 make Exx.pdf
 ```
+
+在 CC-BY-NC-SA 4.0 下释出
