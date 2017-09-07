@@ -1,3 +1,9 @@
+---
+title: '机器学习调研报告'
+author:
+ - 1424010114 徐思源
+date: 2017-09-08
+...
 #前言
 全篇为Andrew Ng（吴恩达）的机器学习课程的笔记，亦作机器学习方面的调研报告。
 
@@ -16,6 +22,10 @@
 另外，还有原课程主页：
 
 * [CS229 <http://cs229.stanford.edu/>](http://cs229.stanford.edu/)
+
+再附上本文编写时的版本控制链接：
+
+* [GitHub <https://github.com/no1xsyzy/MachineLearningNotes>](https://github.com/no1xsyzy/MachineLearningNotes)
 
 #机器学习的动机与应用
 ##何为机器学习
@@ -65,7 +75,7 @@
 
 为了不发生这种情况，提出了局部加权回归。
 
-#局部加权回归（Locally~weighted~regression/loess/lowess）
+#局部加权回归（Locally weighted regression/loess/lowess）
 局部加权回归算法的主要思想是：在每一处需要得到目标值的位置，靠近位置的点得到更多权重，而每次回归一条直线。这样的算法能够对各种情况进行处理，而不需要预先考虑总的函数式。
 
 #分类算法（Classification）

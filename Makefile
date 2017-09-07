@@ -3,8 +3,7 @@ LATEXFLAGS = -H header.tex -B begin.tex -A append.tex -s
 
 LATEXDEPS = header.tex begin.tex append.tex
 TARGETS = E01 E02 E03 E04 E05 E06 E07 E08 E09 E10 \
-          E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 \
-          summary
+          E11 E12 E13 E14 E15 E16 E17 E18 E19 E20
 TEX = $(addsuffix .tex, $(TARGETS))
 PDF = $(addsuffix .pdf, $(TARGETS))
 DOCX = $(addsuffix .docx, $(TARGETS))
@@ -32,3 +31,6 @@ $(PDF): %.pdf: %.md $(LATEXDEPS)
 
 $(DOCX): %.docx: %.md
 	$(PANDOC) $? -o $@
+
+summary.pdf: summary.md sumbegin.tex sumheader.tex append.tex
+	$(PANDOC) -H sumheader.tex -B sumbegin.tex -A sumappend.tex -s summary.md -o summary.pdf --latex-engine=xelatex
