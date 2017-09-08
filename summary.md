@@ -97,8 +97,8 @@ $$ P(y;\eta) = b(y)\exp(\eta^T T(y)-a(\eta)) $$
 ##伯努利分布
 $$
 \begin{aligned}
-a(\eta)&=-\log(1-\phi)=\log(1+e^\eta)
-b(y)&=1
+a(\eta)&=-\log(1-\phi)=\log(1+e^\eta)\\
+b(y)&=1\\
 T(y)&=y
 \end{aligned}
 $$
@@ -106,8 +106,8 @@ $$
 ##高斯分布
 $$
 \begin{aligned}
-a(\eta)&=\frac{1}{2}\eta^2
-b(y)&=\frac{1}{\sqrt(2\pi)}\exp(-\frac{1}{2}y^2)
+a(\eta)&=\frac{1}{2}\eta^2\\
+b(y)&=\frac{1}{\sqrt(2\pi)}\exp(-\frac{1}{2}y^2)\\
 T(y)&=y
 \end{aligned}
 $$
@@ -403,8 +403,6 @@ $$
 E-期望化步骤：对所有$i$，$$Q_i\left( z^{\left ( i \right )} \right) := p\left ( z^{\left ( i \right )}\middle|x^{\left ( i \right )};\theta \right )$$
 
 M-最大化步骤：$$\theta := \arg \max_\theta\sum_i\sum_{z^{\left ( i \right )}}Q_i\left ( z^{\left ( i \right )} \right )\log \frac{p\left ( x^{\left ( i \right )},z^{\left ( i \right )};\theta \right )}{Q_i\left ( z^{\left ( i \right )} \right )}$$
-#EM算法
-##EM算法
 
 如果定义
 $$
@@ -491,6 +489,7 @@ x_1|x_2 &\sim \mathcal{N}\left( \mu_{1|2},\Sigma_{1|2} \right) \\
 \Sigma_{1|2} &= \Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}
 \end{aligned}
 $$
+
 #因子分析
 ##因子分析模型
 处理$\left(x,z\right)$上的联合分布。
