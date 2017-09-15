@@ -3,6 +3,7 @@ title: '机器学习调研报告'
 author:
  - 1424010114 徐思源
 date: 2017-09-08
+JKmainfont: Noto Serif CJK SC
 ...
 #前言
 全篇为Andrew Ng（吴恩达）的机器学习课程的笔记，亦作机器学习方面的调研报告。
@@ -121,7 +122,7 @@ $$
 ##生成学习算法（Generative Learning algorithms）
 与之前的算法不同，生成学习算法尝试生成分类目标的特征模型，然后测试新数据与模型的吻合程度。
 根据贝叶斯法则，
-$$p\left(y|x\right)=\frac{p\left(y|x\right)p\left(y\right)}{p\left(x\right)}$$
+$$p\left(y|x\right)=\frac{p\left(x|y\right)p\left(y\right)}{p\left(x\right)}$$
 
 ##高斯判别分析（Gaussian discriminant analysis）
 在很多情况下特征符合或者近似符合多维高斯分布，所以可以简单地使用推导结果[^1]
